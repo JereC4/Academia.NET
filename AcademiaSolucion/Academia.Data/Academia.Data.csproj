@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Academia.Data.EF\Academia.Data.EF.csproj" />
     <ProjectReference Include="..\Academia.Domain.Model\Academia.Domain.Model.csproj" />
   </ItemGroup>
 

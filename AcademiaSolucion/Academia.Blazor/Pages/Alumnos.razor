@@ -1,0 +1,49 @@
+﻿@page "/alumnos"
+
+@inject Academia.Data.EF.AcademiaContext _context
+
+<h3>Listado de Alumnos</h3>
+
+@if (alumnos == null)
+{
+    <p><em>Cargando...</em></p>
+}
+else if (!alumnos.Any())
+{
+    <p><em>No hay alumnos cargados.</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Fecha Nacimiento</th>
+                <th>Legajo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var a in alumnos)
+            {
+                <tr>
+                    <td>@a.Nombre</td>
+                    <td>@a.Apellido</td>
+                    <td>@a.Dni</td>
+                    <td>@a.FechaNacimiento.ToShortDateString()</td>
+                    <td>@a.Legajo</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Academia.Domain.Model.Alumno>? alumnos;
+
+    protected override void OnInitialized()
+    {
+        alumnos = _context.Alumnos.ToList();
+    }
+}

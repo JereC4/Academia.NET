@@ -1,4 +1,6 @@
 using Academia.Domain.Services;
+using Academia.Data.EF;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

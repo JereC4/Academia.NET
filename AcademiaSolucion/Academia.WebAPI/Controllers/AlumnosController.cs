@@ -33,14 +33,14 @@ public class AlumnosController : ControllerBase
     public IActionResult Create([FromBody] Alumno alumno)
     {
         _service.Add(alumno);
-        return CreatedAtAction(nameof(Get), new { id = alumno.Id }, alumno);
+        return CreatedAtAction(nameof(Get), new { id = alumno.IdAlumno }, alumno);
     }
 
     // PUT: api/alumnos/5
     [HttpPut("{id}")]
     public IActionResult Update(int id, [FromBody] Alumno alumno)
     {
-        alumno.Id = id;
+        alumno.IdAlumno = id;
         _service.Update(alumno);
         return Ok(alumno);
     }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia.Domain.Model", "Academia.Domain.Model\Academia.Domain.Model.csproj", "{8C4AFA2A-302B-4567-B09D-FAB119B6E646}"
 EndProject
@@ -12,6 +12,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia.Data", "Academia.Data\Academia.Data.csproj", "{E0E1C88A-490C-43DE-BD45-479409747FE5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia.WebAPI", "Academia.WebAPI\Academia.WebAPI.csproj", "{9648E55E-4FAA-4CD1-A137-522A3C685608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia.WindowsForms", "Academia.WindowsForm\Academia.WindowsForms.csproj", "{B61F9BC3-4A72-4EDA-9A05-F03DCE5BAC0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia.Data.EF", "Academia.Data.EF\Academia.Data.EF.csproj", "{1305E6B7-EAE0-4CFF-8BE6-744A7C1D1F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia.Blazor", "Academia.Blazor\Academia.Blazor.csproj", "{E0F64A17-E578-4896-94C7-9881599BCAC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{9648E55E-4FAA-4CD1-A137-522A3C685608}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9648E55E-4FAA-4CD1-A137-522A3C685608}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9648E55E-4FAA-4CD1-A137-522A3C685608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61F9BC3-4A72-4EDA-9A05-F03DCE5BAC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61F9BC3-4A72-4EDA-9A05-F03DCE5BAC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61F9BC3-4A72-4EDA-9A05-F03DCE5BAC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61F9BC3-4A72-4EDA-9A05-F03DCE5BAC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1305E6B7-EAE0-4CFF-8BE6-744A7C1D1F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1305E6B7-EAE0-4CFF-8BE6-744A7C1D1F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1305E6B7-EAE0-4CFF-8BE6-744A7C1D1F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1305E6B7-EAE0-4CFF-8BE6-744A7C1D1F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F64A17-E578-4896-94C7-9881599BCAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F64A17-E578-4896-94C7-9881599BCAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F64A17-E578-4896-94C7-9881599BCAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F64A17-E578-4896-94C7-9881599BCAC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
